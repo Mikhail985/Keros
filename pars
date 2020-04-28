@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+
+import urllib.request
+
+url='http://192.168.0.100:8080/photo.jpg'
+resource = urllib.request.urlopen(url)
+out = open("img1.jpg", 'wb')
+out.write(resource.read())
+out.close() 
